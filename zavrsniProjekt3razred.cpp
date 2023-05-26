@@ -28,7 +28,7 @@ class Meso {
             return ID;
         }
 
-        int getCPG(){
+        double getCPG(){
             return cijena_po_kg;
         }
 
@@ -62,7 +62,7 @@ class Biljka {
             return ID;
         }
 
-        int getCPG(){
+        double getCPG(){
             return cijena_po_kg*koeficjent_kvaliteta;
         }
 
@@ -81,15 +81,13 @@ int main()
     vector<Meso> mesnati_proizvodi;
     vector<Biljka> biljni_proizvodi;
 
-    fstream data_file;
+    fstream data_file, data_file2;
 
     data_file.open("biljke.txt", ios::in);
     if (data_file.is_open()) {
         int i=0;
         string data[4];
         while (getline(data_file, data[i])) {
-            cout << data << '\n';
-            //unos
             i++;
             if(i==4){
                 i=0;
@@ -99,20 +97,18 @@ int main()
         data_file.close();
     }
 
-    data_file.open("meso.txt", ios::in);
-    if (data_file.is_open()) {
+    data_file2.open("meso.txt", ios::in);
+    if (data_file2.is_open()) {
         int i=0;
         string data[3];
-        while (getline(data_file, data[i])) {
-            cout << data << '\n';
-            //unos
+        while (getline(data_file2, data[i])) {
             i++;
             if(i==3){
                 i=0;
-                mesnati_proizvodi.push_back(Meso(stoi(data[0]), stod(data[1]), data[3]));
+                mesnati_proizvodi.push_back(Meso(stoi(data[0]), stod(data[1]), data[2]));
             }
         }
-        data_file.close();
+        data_file2.close();
     }
 
     
@@ -123,7 +119,7 @@ int main()
         cout<<"\n     1. Lista svih proizvoda";
         cout<<"\n     2. Lista mesnatih proizvoda";
         cout<<"\n     3. Lista biljnih proizvoda";
-        cout<<"\n     4. Cijena mesnatog proizvoda sa zeljenom kolicinom (5 [ID] [kg])";
+        cout<<"\n     4. Cijena mesnatog proizvoda sa zeljenom kolicinom (4 [ID] [kg])";
         cout<<"\n     5. Cijena biljnog proizvoda sa zeljenom kolicinom (5 [ID] [kg])";
         cout<<"\n     6. Kraj programa";
         cout<<"\n----------------------------------------------------------------------------------------------------------";
@@ -162,8 +158,8 @@ int main()
             cin>>id>>kg;
             system("cls");
             cout<<"-------------------------------------------------------------------";
-            cout<<"\nID: "<<biljni_proizvodi.at(id).getID();
-            cout<<"\nNaziv artikla: "<<biljni_proizvodi.at(id).getV();
+            cout<<"\nID: "<<mesnati_proizvodi.at(id).getID();
+            cout<<"\nNaziv artikla: "<<mesnati_proizvodi.at(id).getV();
             cout<<"\nCijena "<<kg<<"kg: "<<mesnati_proizvodi.at(id).getCPG()*kg<<"KM";
             cout<<"\n-------------------------------------------------------------------";
             cout<<endl;

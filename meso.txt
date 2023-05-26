@@ -1,42 +1,99 @@
 0
-
-
+26.95
+But teleci bez kosti
 1
-
-
+16.25
+Cevapi juneci
 2
-
-
+15.95
+Cevapi juneci za rostilj
 3
-
-
+14.25
+Cevapi mijesani
 4
-
-
+18.95
+Juneca koljenica
 5
-
-
+23.45
+Juneca ledja bez kosti
 6
-
-
+15.95
+Juneca ledja sa kostima
 7
-
-
+14.75
+Juneca podlopatica sa kostima
 8
-
-
+18.45
+Juneca podlopatica bez kosti
 9
-
-
+15.55
+Juneca prsa bez kosti
 10
-
-
+12.55
+Juneca prsta sa kostima
 11
-
-
+15.55
+Juneca rebra bez kosti
 12
-
-
+12.55
+Juneca rebra sa kostima
 13
-
-
+14.95
+Juneca trbusina
+14
+15.95
+Junece mljeveno meso II
+15
+16.45
+Junece mljeveno meso
+16
+19.95
+Juneci but bez kosti
+17
+18.45
+Juneci vrat bez kostiju
+18
+14.75
+Juneci vrat sa kostima
+19
+8.45
+Kobasica juneca rostiljska
+20
+6.95
+Kobasica narodna
+21
+16.25
+Pljeskavica juneca
+22
+15.95
+Pljeskavica juneca za rostilj
+23
+14.25
+Pljeskavica mijesana
+24
+17.95
+Sudzukica teleca
+26
+16.45
+Sudzukica juneca
+27
+10.25
+Teleca koljenica
+28
+23.95
+Teleca ledja sa kostima
+29
+19.45
+Teleca lopatica bez kosti
+30
+15.95
+Teleca podlopatica sa kostima
+31
+13.95
+Teleca rebra sa kostima
+32
+23.95
+Teleca slabina sa kostima
+33
+15.95
+Teleci vrat sa kostima
