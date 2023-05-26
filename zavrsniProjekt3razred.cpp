@@ -18,7 +18,7 @@ class Meso {
         }
 
         void getAll(){            
-            cout<<"\nID: "<<ID;
+            cout<<"\nMeso ID: "<<ID;
             cout<<"\nNaziv artikla: "<<vrsta;
             cout<<"\nCijena: "<<cijena_po_kg<<" KM/kg";
             cout<<"\n-------------------------------------------------------------------";
@@ -51,7 +51,7 @@ class Biljka {
         }
 
         void getAll(){
-            cout<<"\nID: "<<ID;
+            cout<<"\nBiljka ID: "<<ID;
             cout<<"\nNaziv artikla: "<<vrsta;
             cout<<"\nCijena: "<<cijena_po_kg*koeficjent_kvaliteta<<" KM/kg";
             cout<<"\nKoeficjent kvaliteta: "<<koeficjent_kvaliteta<<" / 1";
@@ -158,7 +158,7 @@ int main()
             cin>>id>>kg;
             system("cls");
             cout<<"-------------------------------------------------------------------";
-            cout<<"\nID: "<<mesnati_proizvodi.at(id).getID();
+            cout<<"\nMeso ID: "<<mesnati_proizvodi.at(id).getID();
             cout<<"\nNaziv artikla: "<<mesnati_proizvodi.at(id).getV();
             cout<<"\nCijena "<<kg<<"kg: "<<mesnati_proizvodi.at(id).getCPG()*kg<<"KM";
             cout<<"\n-------------------------------------------------------------------";
@@ -173,7 +173,7 @@ int main()
             cin>>id>>kg;
             system("cls");
             cout<<"-------------------------------------------------------------------";
-            cout<<"\nID: "<<biljni_proizvodi.at(id).getID();
+            cout<<"\nBiljka ID: "<<biljni_proizvodi.at(id).getID();
             cout<<"\nNaziv artikla: "<<biljni_proizvodi.at(id).getV();
             cout<<"\nCijena "<<kg<<"kg: "<<biljni_proizvodi.at(id).getCPG()*biljni_proizvodi.at(id).getKK()*kg<<" KM";
             cout<<"\n-------------------------------------------------------------------";

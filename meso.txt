@@ -73,27 +73,27 @@ Pljeskavica mijesana
 24
 17.95
 Sudzukica teleca
-26
+25
 16.45
 Sudzukica juneca
-27
+26
 10.25
 Teleca koljenica
-28
+27
 23.95
 Teleca ledja sa kostima
-29
+28
 19.45
 Teleca lopatica bez kosti
-30
+29
 15.95
 Teleca podlopatica sa kostima
-31
+30
 13.95
 Teleca rebra sa kostima
-32
+31
 23.95
 Teleca slabina sa kostima
-33
+32
 15.95
 Teleci vrat sa kostima
