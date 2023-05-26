@@ -77,7 +77,7 @@ class Biljka {
 
 int main()
 {
-    cout<<"Dobrodosli u trgovinu domacih mesnatih i biljnih proizvoda!";
+    cout<<"DOBRODOSLI U TRGOVINU DOMACIH MESNATIH I BILJNIH PROIZVODA!";
     vector<Meso> mesnati_proizvodi;
     vector<Biljka> biljni_proizvodi;
 
