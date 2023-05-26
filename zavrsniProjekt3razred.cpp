@@ -127,6 +127,7 @@ int main()
         cout<<"\n     5. Cijena biljnog proizvoda sa zeljenom kolicinom (5 [ID] [kg])";
         cout<<"\n     6. Kraj programa";
         cout<<"\n----------------------------------------------------------------------------------------------------------";
+        cout<<"\n     Redni broj opcije koju zelite odabrati: ";
         cin>>t;
 
         if(t==1){
