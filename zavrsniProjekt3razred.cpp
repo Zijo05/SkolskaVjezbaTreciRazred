@@ -81,34 +81,34 @@ int main()
     vector<Meso> mesnati_proizvodi;
     vector<Biljka> biljni_proizvodi;
 
-    fstream data_file, data_file2;
+    fstream datoteka, datoteka2;
 
-    data_file.open("biljke.txt", ios::in);
-    if (data_file.is_open()) {
+    datoteka.open("biljke.txt", ios::in);
+    if (datoteka.is_open()) {
         int i=0;
-        string data[4];
-        while (getline(data_file, data[i])) {
+        string podatak[4];
+        while (getline(datoteka, podatak[i])) {
             i++;
             if(i==4){
                 i=0;
-                biljni_proizvodi.push_back(Biljka(stoi(data[0]), stod(data[1]), stod(data[2]), data[3]));
+                biljni_proizvodi.push_back(Biljka(stoi(podatak[0]), stod(podatak[1]), stod(podatak[2]), podatak[3]));
             }
         }
-        data_file.close();
+        datoteka.close();
     }
 
-    data_file2.open("meso.txt", ios::in);
-    if (data_file2.is_open()) {
+    datoteka2.open("meso.txt", ios::in);
+    if (datoteka2.is_open()) {
         int i=0;
-        string data[3];
-        while (getline(data_file2, data[i])) {
+        string podatak[3];
+        while (getline(datoteka2, podatak[i])) {
             i++;
             if(i==3){
                 i=0;
-                mesnati_proizvodi.push_back(Meso(stoi(data[0]), stod(data[1]), data[2]));
+                mesnati_proizvodi.push_back(Meso(stoi(podatak[0]), stod(podatak[1]), podatak[2]));
             }
         }
-        data_file2.close();
+        datoteka2.close();
     }
 
     
